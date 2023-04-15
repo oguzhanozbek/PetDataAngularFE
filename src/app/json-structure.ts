@@ -3,8 +3,8 @@ import {User} from "./user";
 
 export interface UserJson {
   id: string;
-  firstname: string;
-  lastname: string;
+  firstName: string;
+  lastName: string;
   pets: Pet[];
 }
 

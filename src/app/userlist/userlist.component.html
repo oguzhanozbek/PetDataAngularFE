@@ -1,1 +1,16 @@
-<p>userlist works!</p>
+<h2>USER LIST</h2>
+<table>
+  <tr *ngFor="let f of users">
+    <td>
+      <a [routerLink]="['users',f.id]">
+      </a>
+    </td>
+    <td>
+      <span>{{f.id}} </span>
+      <span>{{f.firstName}} </span>
+      <span>{{f.lastName}} </span>
+      <span><a href="../userdetails/userdetails.component.html"> Details </a> </span><br>
+
+    </td>
+  </tr>
+</table>

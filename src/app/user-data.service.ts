@@ -18,8 +18,8 @@ export class UserDataService {
   private static json2User(userJson: UserJson): User {
     const user = new User();
     user.id = userJson.id;
-    user.firstname = userJson.firstname;
-    user.lastname = userJson.lastname;
+    user.firstName = userJson.firstName;
+    user.lastName = userJson.lastName;
     user.pets = userJson.pets;
     return user;
   }
