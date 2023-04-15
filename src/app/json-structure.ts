@@ -15,3 +15,8 @@ export interface PetJson {
   age: number;
   owner: User;
 }
+
+export interface CatalogJson {
+  users: UserJson[];
+  pets: PetJson[];
+}
