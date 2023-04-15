@@ -1,3 +1,5 @@
+import {Pet} from "./pet";
+
 export class User {
   public id: string = '';
   public firstname: string = '';
