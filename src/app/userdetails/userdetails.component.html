@@ -1,1 +1,40 @@
-<p>userdetails works!</p>
+<h2>USER DETAILS</h2>
+<ng-container *ngIf="user">
+  <p>
+    <span>User: </span>
+    <span>{{user.firstName}} </span>
+    <span>{{user.lastName}} </span><br><br><br>
+
+    <span>Number of Pet: </span>
+    <span>2</span><br><br><br>
+
+    <span>Pet Details:</span>
+    <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Kind</th>
+      <th>Age</th>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Fluffy</td>
+      <td>cat</td>
+      <td>2</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>Max</td>
+      <td>parrot</td>
+      <td>10</td>
+    </tr>
+    </table>
+
+
+  <p>
+    <a routerLink="/">Click for Navigating to User List</a>
+  </p>
+
+</ng-container>
